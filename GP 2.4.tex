@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{prchk}[2][Progress Check]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{bgact}[2][Beginning Activity]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exe}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Guided Practice 2.4}%replace X with the appropriate number
+\author{Stephen DuVall \\ %replace with your name
+Foundations of Mathematics} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{bgact}{2.4}
+\hfill
+\begin{enumerate}
+\item $(\forall \ a \ \epsilon \ \mathbb{R}) (a + 0 = a)$ True. For all real numbers $a$, $a + 0 = a$
+\item[3.] $\sqrt{x}\  \epsilon\ \mathbb{R}$. I don't know how to check if this is true. I think it is not a statement or whatever
+\item[6.] $(\exists x\ \epsilon\ \mathbb{R}) (x^2+1=0)$. False, $x^2$ could never produce a negative number such that adding one would result in $0$.
+\item[7.] $(\forall x\ \epsilon\ \mathbb{R})(x^3 \geq x^2)$. False, $(\frac{1}{5})^3 \ngtr (\frac{1}{5})^2$
+\item[9.] If $x^2 \geq 1$, then $x \geq 1$. True because $1^2$ is 1. For $x^2$ to be anything greater than 1, $x$ must be greater than 1.
+\item[10.] $(\forall x\ \epsilon\ \mathbb{R})(\text{If } x^2 \geq 1 \text{, then } x \geq 1)$. This is the same thing as above but only written symbolically. 
+\end{enumerate}
+\end{bgact}
+
+\begin{bgact}{2.5}
+\hfill
+\begin{enumerate}
+\item $(\forall x\ \epsilon\ \mathbb{Z})(x \text{ is a multiple of } 2)$.
+    \begin{enumerate}
+        \item For every integer $x$, $x$ is a multiple of 2.
+        \item False. Because the integer $3$ is not a multiple of 2.
+        \item For every integer $x$, $x$ is not a multiple of 2.
+        \item $(\forall x\ \epsilon\ \mathbb{Z})(x \text{ is not a multiple of } 2)$
+        \begin{itemize}
+            \item $(\forall x\ \epsilon\ \mathbb{Z})(x \mod 2 \neq 0)$
+        \end{itemize}
+    \end{enumerate}
+\item $(\exists x\ \epsilon\ \mathbb{Z})(x^3 > 0)$.
+    \begin{enumerate}
+        \item There exists an integer $x$ such that $x^3 > 0$.
+        \item True. Because there exist plenty of integers who's cube is greater than 0. $2^3 = 8$
+        \item There exists an integer $x$ such that $x^3 < 0$.
+        \item $(\exists x\ \epsilon\ \mathbb{Z})(x^3 < 0)$. I don't think this is correct. I need to spend more time and look at how to correctly negate sentences
+    \end{enumerate}
+\end{enumerate}
+
+\end{bgact}
+\end{document}

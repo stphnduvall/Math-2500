@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+\usepackage{listings}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{prchk}[2][Progress Check]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{bgact}[2][Beginning Activity]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exe}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\title{Guided Practice 3.1}
+\author{Stephen DuVall \\
+Foundations of Mathematics}
+
+\maketitle
+
+\begin{bgact}{3.1}
+\hfill
+\begin{enumerate}
+\item[1.] A nonzero integer $m$ divides an integer $n$ if and only if $(\exists q\ \epsilon\ \mathbb{Z})(n = m \times q)$
+    \begin{align*}
+    32 &= 4 \times 8   &  -96 &= 8 \times -12
+    \end{align*}
+\item[2.]
+    \begin{align*}
+        7 \nmid 10 \qquad 10 &= \_ \times 7 \\  
+        8 \nmid 23 \qquad 23 &= \_ \times 8 \\ 
+        4 \nmid 15 \qquad 15 &= \_ \times 4 \\  
+    \end{align*} 
+\item[6.] $\{2, 4, 8\}$,\qquad $\{3, 9, 27\}$,\qquad $\{5, 25, 100\}$
+\item[8.] We would assume that $a | b$ and $b | c$
+\item[10.] We would be trying to prove that $a | c$
+\end{enumerate}
+\end{bgact}
+
+\begin{bgact}{3.2}
+\hfill
+\begin{enumerate}
+	\item[1.] Suppose today is Tuesday
+		\begin{enumerate} 
+			\item[(a)] 3 days from now it will be Friday.
+			\item[(b)] 10 days from now it will be Friday.
+			\item[(c)] 17 days from now it will be Friday. 24 days from now it will be Friday.
+			\item[(d)] $F_{n} = \{24 + 7n\}(n\ \epsilon\ \mathbb{Z} )$ .... $\{31, 38, 45, 52, ...\}$
+			\item[(e)] $\{F_{n} - F_{n-1} \}(n\ \epsilon\ \mathbb{N}) = \{7, 7, 7, ...\}$
+			\item[(f)] Every number in my list is 7. If I were to pick any non consecutive numbers then they would be a multiple of 7.
+		\end{enumerate}
+\end{enumerate}
+\end{bgact}
+
+\begin{exercise}{3} 
+\begin{lstlisting}[language=Python]
+
+for i in range(1999, 0, -23):  # Count down from 1999 by 23
+	if ((y - i) % 8 == 0):  # Check if i is divisible by 23
+		print(i)  
+# 1999
+# 1815
+# 1631
+# 1447
+# 1263
+# 1079
+# 895
+# 711
+# 527
+# 343
+# 159 <-- smallest non-negative number where 23 | (1999 - 159)
+
+\end{lstlisting}
+\end{exercise}
+
+
+\hfill
+\end{document}

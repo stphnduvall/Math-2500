@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{prchk}[2][Progress Check]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{bgact}[2][Beginning Activity]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exe}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\title{Guided Practice x.x}
+\author{Stephen DuVall \\
+Foundations of Mathematics}
+
+\maketitle
+
+\begin{bgact}{x.yz}
+\hfill
+\begin{enumerate}
+\item First
+\item Second
+\end{enumerate}
+\end{bgact}
+
+\begin{prchk}{x.yz}
+\hfill
+\begin{itemize}
+\item[(a)]
+\item[(b)]
+\end{itemize}
+\end{prchk}
+
+\begin{exe}{x.yz}
+\hfill
+\end{exe}
+
+\begin{theorem}{x.yz}
+\end{theorem}
+
+\begin{proof}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment:
+\begin{align*}
+\sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)\\
+& = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis})\\
+& = \frac{k(k+1)+2(k+1)}{2}\\
+& = \frac{(k+1)(k+2)}{2}\\
+& = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{proof}
+
+\begin{theorem}{x.yz}
+Let $n\in \Z$.  Then yada yada.
+\end{theorem}
+
+\begin{proof}
+Blah, blah, blah.  I'm so smart.
+\end{proof}
+
+\end{document}

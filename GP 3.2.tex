@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{array}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{prchk}[2][Progress Check]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{bgact}[2][Beginning Activity]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exe}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\title{Guided Practice 3.2}
+\author{Stephen DuVall \\
+Foundations of Mathematics}
+
+\maketitle
+
+\begin{bgact}{3.21}
+\hfill
+\begin{enumerate}
+\item[1.] \begin{itemize}
+        \item[(a)]
+            \begin{tabular}{ |c|c|c| } 
+                \hline
+                Step & Work & Reason \\ \hline
+                P & n is even & Hypothesis \\ \hline
+                P1 & $(\exists k\ \epsilon\ \mathbb{Z})(n = 2k)$ & Defn. of even integer \\ \hline
+                P2 & $n^{3} = (2k)^{3} = 2k * 2k * 2k$ & Algebra \\ \hline
+                Q1 & $(\exists q\ \epsilon \mathbb{Z})(n^{3} = 2q)$ & Defn. of even integer\\ \hline
+            \end{tabular}
+    \end{itemize}
+\item[5.]
+\end{enumerate}
+\end{bgact}
+
+\begin{prchk}{x.yz}
+\hfill
+\begin{itemize}
+\item[(a)]
+\item[(b)]
+\end{itemize}
+\end{prchk}
+
+\begin{exe}{x.yz}
+\hfill
+\end{exe}
+
+\begin{theorem}{x.yz}
+\end{theorem}
+
+\begin{proof}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment:
+\begin{align*}
+\sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)\\
+& = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis})\\
+& = \frac{k(k+1)+2(k+1)}{2}\\
+& = \frac{(k+1)(k+2)}{2}\\
+& = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{proof}
+
+\begin{theorem}{x.yz}
+Let $n\in \Z$.  Then yada yada.
+\end{theorem}
+
+\begin{proof}
+Blah, blah, blah.  I'm so smart.
+\end{proof}
+
+\end{document}
