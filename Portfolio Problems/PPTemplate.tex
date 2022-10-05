@@ -1,0 +1,67 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newtheoremstyle{mysolutionstyle}
+{\topsep}
+{\topsep}
+{\upshape}
+{}
+{\bfseries}
+{:}
+{.5em}
+{}
+
+\theoremstyle{mysolutionstyle}
+\newtheorem*{soln}{Solution}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Portfolio Problem XX}%replace XX with the appropriate number and letter, such as 9B.  If there is no letter, just write the number.
+\author{My Name \\ %replace with your name
+Foundations of Mathematics} %if necessary, replace with your course title
+
+\maketitle
+
+
+
+
+
+
+
+\begin{soln}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment:
+%Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
+\begin{align*}
+\sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)\\
+& = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis})\\
+& = \frac{k(k+1)+2(k+1)}{2}\\
+& = \frac{(k+1)(k+2)}{2}\\
+& = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{soln}
+
+
+% --------------------------------------------------------------
+%     You don't have to fool with anything below this line.
+% --------------------------------------------------------------
+
+\end{document}

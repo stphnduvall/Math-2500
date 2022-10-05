@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{prchk}[2][Progress Check]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{bgact}[2][Beginning Activity]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exe}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\title{Guided Practice 3.3}
+\author{Stephen DuVall \\
+Foundations of Mathematics}
+
+\maketitle
+
+\begin{bgact}{1}
+	\hfill
+	\begin{enumerate}
+		\item[4.] Assume the negation of the statement:
+		\begin{align*}
+			\neg \left[(\forall x\ \epsilon\ \mathbb{R}) (0<x<1) \to \left(\frac{1}{x (1-x)}\geq 4\right)\right] \\
+			(\exists x\ \epsilon\ \mathbb{R})\neg \left[0<x<1\to \frac{1}{x (1-x)}\geq 4\right] \\ 
+			(\exists x\ \epsilon\ \mathbb{R})(0<x<1) \land \neg\left[\frac{1}{x (1-x)}\geq 4\right] \\
+			(\exists x\ \epsilon\ \mathbb{R})(0<x<1) \land \left[\frac{1}{x (1-x)}<4\right] \\
+		\end{align*}
+		\begin{proof}
+			\begin{align*}
+				\frac{1}{x(1-x)} &< 4 \\
+				1 &< 4x(1 - x) \\
+				1 &< -4x^{2} + 4x \\
+				4x^{2} - 4x + 1 &< 0 \\
+				\left(2x - 1\right)^{2} &< 0 & (2x-1) \text{is real due to closure of } x \\
+				m^{2} &< 0 & \text{there are no real numbers where } m^{2} < 0 \\
+			\end{align*}
+		\end{proof}
+	\end{enumerate}
+\end{bgact}
+
+\begin{bgact}{2}
+	\hfill
+	\begin{enumerate}
+		\item 
+			\begin{align*}
+				\frac{x}{y} + \frac{y}{x} &\le 	2 \\
+				xy \left(\frac{x}{y} + \frac{y}{x} \right) &\le 2 * xy \\
+				x^2 + y^2 &\le 2xy \\
+				x^2 - 2xy + y^2 &\le 0 \\
+				(x - y)^2 &\le 0
+			\end{align*}
+		\item Because $x \ne y$, $x - y$ can never be $0$. All real numbers, including negative numbers, squared will be greater than zero.
+	\end{enumerate}
+\end{bgact}
+
+\end{document}

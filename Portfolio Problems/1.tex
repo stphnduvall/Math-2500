@@ -1,0 +1,58 @@
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newtheoremstyle{mysolutionstyle}
+{\topsep}
+{\topsep}
+{\upshape}
+{}
+{\bfseries}
+{:}
+{.5em}
+{}
+
+\theoremstyle{mysolutionstyle}
+\newtheorem*{soln}{Solution}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+
+\title{Portfolio Problem 1A}%replace XX with the appropriate number and letter, such as 9B.  If there is no letter, just write the number.
+\author{Stephen DuVall \\ %replace with your name
+Foundations of Mathematics} %if necessary, replace with your course title
+
+\maketitle
+% $(\forall m \epsilon \mathbb{N})(m > 2) \rightarrow (2m, m^2 - 1, m^2 + 1)$ is a Pythagorean Triple
+\textbf{Conjecture:} If $a$ and $b$ are type 2 integers, then $a^2 + b^2$ is a type to integer as well \\
+\textbf{\emph{Type 2 Integer:}} An integer $a$ is said to be type 2 if and only if there exists an integer $m$ such that$a = 3m + 2$
+\hfill
+\begin{soln} \textbf{Negation:} $(\forall a,b\ \epsilon\ \mathbb{Z}^*)(a^2 + b^2 \text{ is not type 2})$ ...($\mathbb{Z}^*$ is the set of type 2 integers) \\ 
+\hfill
+Counterexample:
+\begin{align*}
+	a &= 17	& b &= 23\\
+	a &= 3m+2	& b &= 3n + 2\\
+	m &= 5	& n &= 7
+\end{align*}
+\begin{align*}
+	a^2 + b^2 &= z\\
+	17^2 + 23^2 &= 818 	&\text{\emph{(basic arithmetic)}}\\
+	3x + 2 &= 818 		&\text{\emph{(defn. of type 2 int)}}\\
+	3x &= 816 \\ 
+	x &= 816 / 3 \\
+	x &= 272 			&\text{\emph{(z is a type 2 int)}}
+\end{align*}
+\end{soln}
+
+\end{document}
